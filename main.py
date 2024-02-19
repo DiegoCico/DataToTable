@@ -9,7 +9,7 @@ def convert_sheet_to_table(file_path):
     """
     try:
         # Read the file based on its extension
-        if file_path.endswith('.xlsx') or file_path.endswith('.xls'):
+        if file_path.endswith(('.xlsx', '.xls')):
             df = pd.read_excel(file_path)
         elif file_path.endswith('.csv'):
             df = pd.read_csv(file_path)
