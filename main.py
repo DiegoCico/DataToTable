@@ -23,6 +23,5 @@ def convert_sheet_to_table(file_path):
 
 
 file_path = 'tables/random_numbers.csv'
-table = convert_sheet_to_table(file_path)
-if table is not None:
+if (table := convert_sheet_to_table(file_path)) is not None:
     print(table)
